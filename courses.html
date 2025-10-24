@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mahran Courses</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header class="site-header">
+  <h1>Mahran <span>Courses</span></h1>
+
+  <div class="header-right">
+    <!-- search wrapper -->
+    <div class="search-wrap">
+      <input id="searchInput" type="text" placeholder="Search" aria-label="Search">
+      <button id="searchBtn" class="icon-btn" aria-label="Open search">
+        🔍
+      </button>
+    </div>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        
+        <nav id="sideMenu" class="side-menu">
+            <a href="front.html">Home</a>
+            <a href="dashboard.html">My Courses</a>
+            <a href="connect.html">Contact Us</a>
+        </nav>
+    <!--<a href="front.html" class="btn">Home</a>
+    <a href="dashboard.html" class="btn">My Courses</a>
+    <a href="connect.html" class="btn">Contact</a>
+    <a href="front.html" class="btn1">
+      <img src="home.png" alt="">
+    </a>
+    <a href="connect.html" class="btn1">
+      <img src="customer-service.png" alt="">
+    </a>
+    <a href="dashboard.html" class="btn1">
+      <img src="heart (1).png" alt="">
+    </a>
+  </div>-->
+</header>
+
+
+<main id="coursesContainer"></main>
+  <!-- Modal -->
+  <div id="courseModal" class="modal" aria-hidden="true">
+    <div class="modal-content">
+      <span class="close" role="button" aria-label="Close">&times;</span>
+      <img id="modalImg" src="" alt="">
+      <h2 id="modalTitle"></h2>
+      <p id="modalDesc"></p>
+
+      <div class="modal-actions">
+        <button id="favoriteBtn">❤️ Add to Favorites</button>
+        <a id="courseLink" href="#" target="_blank" class="btn2">Go to Course</a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 Mahran Courses | Built by Mahran</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

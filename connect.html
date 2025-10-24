@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="contact.css">
+  <title>Mahran Contact</title>
+</head>
+<body>
+
+  <header>
+    <h1>Contact <span>Us</span></h1>
+    <nav>
+      <ul>
+        <li><a href="front.html">Home</a></li>
+        <li><a href="index.html">Courses</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="contact">
+    <div class="contact-info">
+      <h2>Get in Touch</h2>
+      <p><i>📍</i> Al Minya, Egypt</p>
+      <p><i>📞</i>+201122624866 / +201208048295</p>
+      <p><i>📧</i>mohamerabea886418@gmail.com</p>
+      <p>We’re here to help you learn and grow.  
+      Send us your message and we’ll respond as soon as possible!</p>
+    </div>
+
+    <div class="contact-form">
+      <h3>Send a Message</h3>
+      <form id="contactForm">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+  <footer>
+    <p>© 2025 Mahran Courses | Built by Mahran</p>
+  </footer>
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function(e){
+      e.preventDefault();
+      alert('Thank you for contacting us! We’ll reply soon.');
+      this.reset();
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Academy</title>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f5f6fa;
+}
+
+.navbar {
+  background-color: #1e1e2f;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #00bcd4;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links li a span {
+    display: none; /* يخفي النص */
+  }
+
+  .nav-links li a {
+    font-size: 20px;
+  }
+
+  .nav-links {
+    gap: 20px;
+  }
+}
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <div class="logo">My Academy</div>
+      <ul class="nav-links">
+        <li><a href="#"><i class="fas fa-home"></i> <span>Home</span></a></li>
+        <li><a href="#"><i class="fas fa-envelope"></i> <span>Contact</span></a></li>
+        <li><a href="#"><i class="fas fa-search"></i></a></li>
+      </ul>
+    </nav>
+  </header>
+
+</body>
+</html>
