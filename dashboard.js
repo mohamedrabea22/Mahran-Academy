@@ -22,8 +22,15 @@ function renderFavorites() {
         <h3>${course.title}</h3>
         <p>${course.desc.substring(0, 80)}...</p>
         <div class="modal-actions">
-          <a href="${course.link}" target="_blank" class="btn">Go to Course</a>
-          <button class="remove-btn" data-id="${course.id}">Remove</button>
+          <a href="${course.link}" target="_blank" class="btn2">Go to Course</a>
+          <button class="remove-btn" data-id="${course.id}" style= "background: #facc15;
+  color: #0c83c4;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+  border: none">Remove</button>
         </div>
       </div>
     `;
